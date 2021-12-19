@@ -45,8 +45,6 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height:;
-	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -56,14 +54,14 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 2.375em 0;
+	padding: 1em 1em 0.5em;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 2.875em 0;
+	padding: 0em 0 1em;
 }
 header nav ul {
 	margin: 0;
@@ -73,8 +71,9 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 0.625em;
-	display: inline;
+	padding: 1em 0.625em;
+	display: flex;
+	flex-flow: column wrap;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -92,14 +91,23 @@ header nav ul li a{
 }
 
 .main-image {
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
+	margin: auto 1em;
 }
 
 .main-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	margin: auto 1em;
 }
 
 .main-title h2 {
@@ -116,22 +124,25 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
 	border-top: 1px solid #eee;
+	margin: auto 1em;
 }
 
-.section-one h3 {
-	padding: 0.625em 0;
-}
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
+.section-one h3,
 .section-two h3,
 .section-three h3 {
-	padding: 0.625em 1.875em;
+	margin: 1.5em 1em .5em 1em;
+}
+
+.section-three p {
+	padding: 0 0;
+	margin: 1em 4em;
 }
 
 .menu {
@@ -170,4 +181,16 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+
+/*Tablet styles*/
+@media all and (min-width:768px) {
+
+}
+
+
+/*Desktop styles*/
+@media all and (min-width: 1200px) {
+
 }
