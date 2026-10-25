@@ -210,6 +210,31 @@ footer span {
 
 @media all and (min-width: 1200px) {
 
+body {
+	font-size: 1em;
+}
+
+header .content-wrapper {
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+
+header h1 {
+	width: 30%;
+	padding: 0;
+	border-bottom: none;
+	text-align: left;
+}
+
+header nav {
+	width: 21%;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+}
 
 	
 }
